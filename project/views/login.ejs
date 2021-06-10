@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/registerStyle.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+
+<div class="create-blog content">
+  <h1>Login</h1>
+  <%- include ('./partials/messages') %>
+      <form action="/users/login" method="POST">
+
+          <label for="email"><strong>Email</strong>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" />
+
+          <label for="password"><strong>Password</strong>
+          <input type="password" id="password" name="password" class="form-control" placeholder="Create Password" />
+      
+          <button type="submit" class="btn btn-dark btn-block">Login</button>
+          <button class="btn btn-dark btn-block"><a href="/users/register" id="lien">Register</a></button>
+      </form>
+</div>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/registerStyle.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <div class="create-blog content">
+        <h1>Register</h1>
+        <%- include ('./partials/messages') %>
+            <form action="/users/register" method="POST">
+                <label for="name"> <strong>Name</strong> </label>
+                <input type="name" id="name" name="name" class="form-control" placeholder="Enter Name"
+                    value="<%= typeof name != 'undefined' ? name : '' %>" />
+
+                <label for="email"> <strong>Email</strong> </label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email"
+                    value="<%= typeof email != 'undefined' ? email : '' %>" />
+
+                <label for="password"> <strong>Password</strong> </label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Create Password"
+                    value="<%= typeof password != 'undefined' ? password : '' %>" />
+
+                <label for="password2"> <strong>Confirm Password </strong> </label>
+                <input type="password" id="password2" name="password2" class="form-control"
+                    placeholder="Confirm Password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
+
+                <button class="btn btn-dark btn-block">Register</button>
+                <button class="btn btn-dark btn-block"><a href="/users/login" id="lien">Have An Account ? Login</a></button>
+                
+            </form>
+    </div>
+
+</body>
+
+</html>

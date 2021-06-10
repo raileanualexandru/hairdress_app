@@ -1,0 +1,23 @@
+
+/*
+body {
+    background-color:  #12121f;
+}
+.formulaire{
+   margin-top: 100px;
+}
+
+*/
+
+body {
+    background-color:  #12121f;
+}
+.formulaire{
+   margin-top: 100px;
+}
+
+.customInput{
+    width: 50%;
+    background-color: rgb(221, 220, 220);
+}
+

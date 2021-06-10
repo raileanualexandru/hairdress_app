@@ -1,0 +1,67 @@
+body {
+    background-image: url('../images/aboutus.jpg');
+    background-size: 100%;
+    position: center;
+}
+
+.create-blog form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.create-blog input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.create-blog label {
+    display: block;
+    margin-top: 24px;
+    color: rgb(255, 214, 29);
+    font-size: 20px;
+    /* filter: drop-shadow(0 0 0.75rem rgb(255, 214, 29)); */
+    text-shadow:2px 2px 4px #000000;
+}
+
+.create-blog button {
+    margin-top: 20px;
+    color: rgb(255, 214, 29);
+    background-color: black;
+    padding: 6px;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 214, 29));
+}
+
+.create-blog a {
+    color: rgb(255, 214, 29);
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(255, 214, 29);
+    text-align: center;
+    text-shadow:2px 2px 4px #000000;
+}
+
+p {
+    color: white;
+    position: relative;
+    left: 20%;
+}
+
+
+#lien:hover{
+    color: white;
+    text-decoration: none;
+}

@@ -39,7 +39,7 @@ router.post('/', (req, res) => {
     newAppointment.save();
     //req.flash('success_msg', 'You are now registered!');
 
-    res.redirect('/')
+    res.redirect('/index')
 
 
 
